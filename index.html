@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certification">Certification</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Meghana</span></h1>
+            <h2>Python Developer</h2>
+            <p>Passionate about building applications and learning new technologies.</p>
+            <div class="buttons">
+                <a href="https://drive.google.com/file/d/1XsOhU7V4jfx_F_PvVA3WuDrNiZUxG93W/view?usp=drivesdk" class="btn" target="_blank">Hire Me</a>
+                <button class="btn" onclick="openChat()">Let's Talk</button>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="image.jpg" alt="image.jpg">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Meghana, a student at Shri Shankarlal Sundarbhai Shasun Jain College for Women, currently pursuing my second year of B.C.A. I have learned C, C++, and Python, with Python being my favorite. I am deeply passionate about Python development and aspire to grow as a skilled developer. Alongside my programming journey, I am also learning AWS to expand my expertise in cloud computing.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <img src="python.jpg" alt="Python">
+            <img src="html.jpg" alt="HTML">
+            <img src="CSS.jpg" alt="CSS">
+            <img src="ml.jpg" alt="Machine Learning">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal website to showcase my skills.</p>
+        </div>
+        <div class="project">
+            <h3>Machine Learning</h3>
+            <ul>
+                <li><strong>Women's Cloth Review Prediction:</strong> Analyzed customer reviews using NLP.</li>
+                <li><strong>Train-Test Split:</strong> Implemented data splitting for model training.</li>
+                <li><strong>Title Method:</strong> Applied text processing techniques.</li>
+            </ul>
+            <video width="400" height="300" controls>
+                <source src="ml_project.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <img src="College_Logo.jpg" alt="College_Logo.jpg" width="900">
+        <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
+        <p><strong>Shri Shankarlal Sundarbhai Shashun Jain College for Women</strong></p>
+        <p><strong>Expected Graduation: 2026</strong></p>
+         <p><strong>School Name:Sri Sitaram Vidyalaya Matriculation Higher Secondary School</strong></p>
+        <p><strong>Completed:2023</strong></p>
+    </section>
+
+    <section id="certification">
+  <h2>Certifications</h2>
+  <div class="certifications-container">
+    <div class="cert-item">
+      <strong>Machine Learning Internship</strong><br>
+      <small>Suven Consultants & Technology Pvt. Ltd.</small><br>
+      <small>Completed on April 19, 2024</small><br>
+      <img src="cert1.jpg" alt="Machine Learning Certification">
+    </div>
+    <div class="cert-item">
+      <strong>Python Programming Internship</strong><br>
+      <small>YBI Foundation</small><br>
+      <small>Completed on Jan 17, 2024</small><br>
+      <img src="cert2.jpg" alt="Python Certification">
+    </div>
+    <div class="cert-item">
+      <strong>Object-Oriented Programming using Python</strong><br>
+      <small>Infosys</small><br>
+      <small>Completed on Feb 27, 2024</small><br>
+      <img src="cert3.jpg" alt="OOP Certification">
+    </div>
+    <div class="cert-item">
+      <strong>AI Tools Workshop</strong><br>
+      <small>Completed on Feb 14-15, 2024</small><br>
+      <img src="cert4.jpg" alt="AI Tools Certification">
+    </div>
+    <div class="cert-item">
+      <strong>HTML, CSS & Cloud Certification</strong><br>
+      <small>IBM</small><br>
+      <small>Completion Date: Feb 25, 2025</small><br>
+      <img src="cert5.jpg" alt="HTML, CSS & Cloud Certification">
+    </div>
+  </div>
+</section>    <section id="resume">
+        <h2>Download My Resume</h2>
+        <a href="https://drive.google.com/file/d/1QJPZPv50r-XLzQulPobiyc53v3f7Xuj1/view?usp=drivesdk"class="btn" target="_blank">Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Phone: 9498659197</p>
+        <p>Email: <a href="mailto:onmeghana@gmail.com">onmeghana@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/meghana-on-3b139a290" target="_blank">Meghana's LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openChat() {
+            let chatBox = document.createElement("div");
+            chatBox.style.position = "fixed";
+            chatBox.style.bottom = "10px";
+            chatBox.style.right = "10px";
+            chatBox.style.width = "300px";
+            chatBox.style.height = "400px";
+            chatBox.style.background = "#fff";
+            chatBox.style.border = "1px solid #000";
+            chatBox.style.padding = "10px";
+            chatBox.innerHTML = "<h3>Chat with Meghana</h3><p>Type your message...</p>";
+            document.body.appendChild(chatBox);
+        }
+    </script>
+
+</body>
+</html>
