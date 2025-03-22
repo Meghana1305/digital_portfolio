@@ -120,12 +120,6 @@ h2 {
     height: 400px;
     border-radius: 10px;
 }
-
-/* Education Section */
-#education img {
-    width: 300px;
-    margin-bottom: 9px;
-}
 .certifications-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two certificates per row */
